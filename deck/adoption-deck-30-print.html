@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Adoption Deck — 30 cards (print &amp; cut)</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { font-family: 'DM Sans', 'Funnel Sans', 'Segoe UI', -apple-system, sans-serif; background: #eceae4; color: #1a1a1c; }
+.no-print { max-width: 192mm; margin: 10mm auto 6mm; padding: 5mm 7mm; background: #2f5347; color: #fff;
+  border-radius: 3mm; font-size: 9pt; line-height: 1.5; }
+.no-print strong { color: #d9c98a; }
+.no-print button { margin-top: 2.5mm; padding: 2mm 5mm; border: 0; border-radius: 2mm; background: #d9c98a;
+  color: #2f5347; font: 700 9.5pt/1 inherit; font-family: inherit; cursor: pointer; }
+@page { size: A4; margin: 9mm; }
+.sheet { width: 192mm; margin: 8mm auto; padding: 0; display: grid;
+  grid-template-columns: repeat(2, 1fr); grid-auto-rows: 67mm; gap: 3mm;
+  background: #fff; box-shadow: 0 1mm 4mm rgba(30,40,30,.18); }
+@media print { body { background: #fff; } .sheet { margin: 0; box-shadow: none; } .no-print { display: none; } }
+
+.card { border: 0.4mm dashed #b0aca0; border-radius: 3mm; padding: 3.5mm 4mm; overflow: hidden;
+  display: flex; flex-direction: column; break-inside: avoid; page-break-inside: avoid; }
+.card.meta   { --c: #8A6A1F; }
+.card.can    { --c: #2F5347; }
+.card.should { --c: #B54A36; }
+.card.how    { --c: #4E5D6B; }
+.card.ready  { --c: #A8842C; }
+.card.value  { --c: #6B4E5F; }
+.top { display: flex; align-items: center; justify-content: space-between; }
+.chip { display: inline-block; padding: 1mm 2.8mm; border-radius: 5mm; background: var(--c); color: #fff;
+  font-size: 6.3pt; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
+.kind { font-size: 5.8pt; letter-spacing: .12em; color: #9a978c; text-transform: uppercase; font-weight: 600; }
+.num { font-size: 7pt; font-weight: 600; color: #9a978c; letter-spacing: .06em; }
+.title { font-size: 11.5pt; font-weight: 700; line-height: 1.16; margin: 2mm 0 0; color: #1a1a1c; }
+.lbl { font-size: 5.9pt; font-weight: 700; letter-spacing: .1em; color: var(--c); margin: 1.6mm 0 .6mm;
+  text-transform: uppercase; }
+p.a, p.b { font-size: 7.9pt; line-height: 1.32; color: #3a3c40; }
+.line { margin-top: auto; padding-top: 1.6mm; border-top: 0.3mm solid rgba(26,26,28,.14);
+  font-size: 8.2pt; font-style: italic; font-weight: 600; line-height: 1.25; color: var(--c); }
+.card.cover { border-style: solid; background: #2f5347; border-color: #2f5347; color: #fff; }
+.cover .kicker { font-size: 6.6pt; font-weight: 700; letter-spacing: .2em; color: #d9c98a; text-transform: uppercase; margin-top: 2mm; }
+.cover h1 { font-size: 18pt; font-weight: 700; line-height: 1.1; margin: 2.5mm 0 0; color: #fff; }
+.cover .sub { font-size: 8.4pt; margin-top: 1.6mm; color: #cfd8d0; line-height: 1.35; }
+.cover .cats { margin-top: 3mm; font-size: 7pt; line-height: 1.75; color: #cfd8d0; }
+.dot { display: inline-block; width: 2.6mm; height: 2.6mm; border-radius: 50%; margin-right: 2.2mm; }
+.cover .tag { margin-top: auto; padding-top: 2.5mm; font-size: 8pt; font-style: italic; font-weight: 600; color: #d9c98a; }
+</style>
+</head>
+<body>
+<div class="no-print">
+<strong>Print setup:</strong> A4 &middot; scale <strong>100% / Actual size</strong> &middot; background graphics: on.
+Then cut along the dashed lines. 8 cards per page, 4 pages — the first card is the deck cover.
+Free to print and share; not for resale. This is not a sales document.
+<button onclick="window.print()">Print</button>
+</div>
+<div class="sheet"><div class="card cover">
+<div class="kicker">A DECK OF WRITTEN ANSWERS</div>
+<h1>The Adoption Deck</h1>
+<div class="sub">30 cards for partners and principals asking how their firm should adopt AI.</div>
+<div class="cats">
+<span class="dot" style="background:#2F5347"></span>Can we do AI? — capability and current state<br>
+<span class="dot" style="background:#B54A36"></span>Should we do AI? — opportunity and risk<br>
+<span class="dot" style="background:#4E5D6B"></span>How would we do it? — implementation orientation<br>
+<span class="dot" style="background:#A8842C"></span>Are we ready? — readiness check<br>
+<span class="dot" style="background:#6B4E5F"></span>What's the value? — business case framing
+</div>
+<div class="tag">AI can do the work. Your firm is paid for the judgement.</div>
+</div>
+<div class="card meta">
+<div class="top"><span class="chip">START HERE</span><span class="kind">MOVE</span><span class="num">00 / 30</span></div>
+<h2 class="title">Write, don&#x27;t think</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">Reflection feels done when it&#x27;s been thought about. Thought answers hide gaps; written answers expose them.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Thirty to sixty minutes, pen in hand, one answer per card, in the firm&#x27;s own words. Alone first, then with the partners.</p>
+<p class="line">Written answers expose gaps that mental ones do not.</p>
+</div>
+<div class="card can">
+<div class="top"><span class="chip">Can we do AI?</span><span class="kind">AUDIT</span><span class="num">01 / 30</span></div>
+<h2 class="title">The tool list</h2>
+<div class="lbl">WHY IT GETS DODGED</div>
+<p class="a">Personal accounts feel invisible, so the firm&#x27;s real tool count is higher than the paid one — and the invisible tools are the unmanaged ones.</p>
+<div class="lbl">WRITE THIS DOWN</div>
+<p class="b">Every AI tool the firm currently pays for, by name. Plus the personal accounts staff use for work. If you cannot list these confidently, write that down instead.</p>
+<p class="line">If you cannot list them, that is the answer.</p>
+</div>
+<div class="card can">
+<div class="top"><span class="chip">Can we do AI?</span><span class="kind">AUDIT</span><span class="num">02 / 30</span></div>
+<h2 class="title">Three tools, named uses</h2>
+<div class="lbl">WHY IT GETS DODGED</div>
+<p class="a">“People use it sometimes” feels like an answer. It names neither the work nor the frequency, so it can be neither managed nor improved.</p>
+<div class="lbl">WRITE THIS DOWN</div>
+<p class="b">Take three tools. For each: who uses it, how often, and what for. Specific: “Sarah uses ChatGPT to redraft client replies, two or three times a week.”</p>
+<p class="line">A use you can name is a use you can govern.</p>
+</div>
+<div class="card can">
+<div class="top"><span class="chip">Can we do AI?</span><span class="kind">AUDIT</span><span class="num">03 / 30</span></div>
+<h2 class="title">The three groups</h2>
+<div class="lbl">WHY IT GETS DODGED</div>
+<p class="a">It&#x27;s easier to sort staff into “uses it” and “doesn&#x27;t” and stop there. The third group — usually the biggest — is where the unexamined risk sits.</p>
+<div class="lbl">WRITE THIS DOWN</div>
+<p class="b">The staff you&#x27;d call habitual, capable AI users, by name. The staff who don&#x27;t use AI at all. If both groups are smaller than headcount: what is the third group doing?</p>
+<p class="line">Count the middle group. It&#x27;s the biggest one.</p>
+</div>
+<div class="card can">
+<div class="top"><span class="chip">Can we do AI?</span><span class="kind">AUDIT</span><span class="num">04 / 30</span></div>
+<h2 class="title">The unseen use</h2>
+<div class="lbl">WHY IT GETS DODGED</div>
+<p class="a">Nobody wants to write down where they think the firm is exposed. But shadow use that goes unnamed also goes ungoverned.</p>
+<div class="lbl">WRITE THIS DOWN</div>
+<p class="b">Where you think AI is being used in the firm that you do not currently see. Almost every firm has an answer.</p>
+<p class="line">Almost every firm has an answer. The answer matters.</p>
+</div>
+<div class="card can">
+<div class="top"><span class="chip">Can we do AI?</span><span class="kind">AUDIT</span><span class="num">05 / 30</span></div>
+<h2 class="title">Sustained or tolerated?</h2>
+<div class="lbl">WHY IT GETS DODGED</div>
+<p class="a">Firms conflate tolerating AI use with supporting it. Tolerated use depends on individual initiative and dies with it.</p>
+<div class="lbl">WRITE THIS DOWN</div>
+<p class="b">Could the firm sustain AI use it considered important — training, guidance, an internal owner? Or would such use depend on individual initiative?</p>
+<p class="line">Supported use survives the person. Tolerated use doesn&#x27;t.</p>
+</div>
+<div class="card can">
+<div class="top"><span class="chip">Can we do AI?</span><span class="kind">MOVE</span><span class="num">06 / 30</span></div>
+<h2 class="title">Name the internal owner</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">When nobody owns the question “is this appropriate?”, every staff member answers it alone, and the firm&#x27;s position is whatever the boldest person decided.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Name the one person staff would naturally go to with “is this appropriate?” — then tell the firm you named them.</p>
+<p class="line">A question with no owner gets answered in private.</p>
+</div></div><div class="sheet"><div class="card should">
+<div class="top"><span class="chip">Should we do AI?</span><span class="kind">AUDIT</span><span class="num">07 / 30</span></div>
+<h2 class="title">Where value is plausible</h2>
+<div class="lbl">WHY IT GETS DODGED</div>
+<p class="a">“Drafting” is where the thinking stops. Generic answers produce generic adoption, and generic adoption produces nothing defensible.</p>
+<div class="lbl">WRITE THIS DOWN</div>
+<p class="b">Where would AI most plausibly add value if used well? Be specific: not “drafting” but “first-pass drafts of standard property contract clauses where the senior associate&#x27;s review remains the binding step.”</p>
+<p class="line">Not “drafting”. Which drafts, reviewed by whom.</p>
+</div>
+<div class="card should">
+<div class="top"><span class="chip">Should we do AI?</span><span class="kind">AUDIT</span><span class="num">08 / 30</span></div>
+<h2 class="title">Where risk exceeds value</h2>
+<div class="lbl">WHY IT GETS DODGED</div>
+<p class="a">“Data leakage” is abstract, so it gets filed under IT and forgotten. The real risks are concrete and sit in named workflows.</p>
+<div class="lbl">WRITE THIS DOWN</div>
+<p class="b">Where would AI introduce risks that exceed the value? Same specificity: “the property associates pasting client emails into ChatGPT to draft replies.”</p>
+<p class="line">Name the workflow, not the category.</p>
+</div>
+<div class="card should">
+<div class="top"><span class="chip">Should we do AI?</span><span class="kind">AUDIT</span><span class="num">09 / 30</span></div>
+<h2 class="title">The sensitive material</h2>
+<div class="lbl">WHY IT GETS DODGED</div>
+<p class="a">Week by week, sensitive material passes through tools without anyone tracking it, because tracking was never anyone&#x27;s job.</p>
+<div class="lbl">WRITE THIS DOWN</div>
+<p class="b">The most sensitive material your team handles in a week. A month. A year. For each: can you say with confidence whether it has, or has not, passed through any AI tool?</p>
+<p class="line">“I don&#x27;t know” is a finding. Write it down.</p>
+</div>
+<div class="card should">
+<div class="top"><span class="chip">Should we do AI?</span><span class="kind">AUDIT</span><span class="num">10 / 30</span></div>
+<h2 class="title">The regulator question</h2>
+<div class="lbl">WHY IT GETS DODGED</div>
+<p class="a">The answer exists in pieces across partners&#x27; heads. It has never been written in one place, so it has never been tested.</p>
+<div class="lbl">WRITE THIS DOWN</div>
+<p class="b">Your regulator asks tomorrow how the firm uses AI. The answer, in plain English, three or four sentences. Read it back. Would it satisfy you, in their position?</p>
+<p class="line">Write the answer before you need it.</p>
+</div>
+<div class="card should">
+<div class="top"><span class="chip">Should we do AI?</span><span class="kind">AUDIT</span><span class="num">11 / 30</span></div>
+<h2 class="title">The client conversation</h2>
+<div class="lbl">WHY IT GETS DODGED</div>
+<p class="a">Clients raising AI feels hypothetical until it arrives, and the first conversation should not be improvised.</p>
+<div class="lbl">WRITE THIS DOWN</div>
+<p class="b">Has any client raised AI — asking you to use it, not to use it, or how you handle their material? What did you tell them? If not: do you expect it within twelve months?</p>
+<p class="line">The first client to ask deserves a rehearsed answer.</p>
+</div>
+<div class="card should">
+<div class="top"><span class="chip">Should we do AI?</span><span class="kind">MOVE</span><span class="num">12 / 30</span></div>
+<h2 class="title">One page, one position</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">The firm&#x27;s position stays verbal, so it shifts with whoever is asked — and the written form arrives only after an incident.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Take the regulator answer and make it the firm&#x27;s one-page AI position: what staff may do, what needs asking first, who owns the question. Date it. Review twice a year.</p>
+<p class="line">If it isn&#x27;t written, it isn&#x27;t a position.</p>
+</div>
+<div class="card how">
+<div class="top"><span class="chip">How would we do it?</span><span class="kind">AUDIT</span><span class="num">13 / 30</span></div>
+<h2 class="title">Training that changed something</h2>
+<div class="lbl">WHY IT GETS DODGED</div>
+<p class="a">Training gets remembered as an event, not measured as a change. If nothing changed afterwards, the training was entertainment.</p>
+<div class="lbl">WRITE THIS DOWN</div>
+<p class="b">Any AI training the firm has tried, formal or informal. Who attended? What changed afterwards?</p>
+<p class="line">What changed afterwards is the only part that counts.</p>
+</div>
+<div class="card how">
+<div class="top"><span class="chip">How would we do it?</span><span class="kind">AUDIT</span><span class="num">14 / 30</span></div>
+<h2 class="title">The policy that exists</h2>
+<div class="lbl">WHY IT GETS DODGED</div>
+<p class="a">A one-page memo from two years ago feels like a policy. If staff can&#x27;t say what it says, it&#x27;s a document, not a policy.</p>
+<div class="lbl">WRITE THIS DOWN</div>
+<p class="b">Any AI use policy or internal guideline, even one page. Where does it live, when was it last updated, and what does staff actually do in light of it?</p>
+<p class="line">A policy nobody operates is a wish with a date on it.</p>
+</div></div><div class="sheet"><div class="card how">
+<div class="top"><span class="chip">How would we do it?</span><span class="kind">AUDIT</span><span class="num">15 / 30</span></div>
+<h2 class="title">The first move</h2>
+<div class="lbl">WHY IT GETS DODGED</div>
+<p class="a">Every option argues for itself — workshop, policy, infrastructure, hire. Without naming one, the firm stays in “we should think about this”.</p>
+<div class="lbl">WRITE THIS DOWN</div>
+<p class="b">If the firm decided this week to take AI seriously, what would the first move be? Why that one, and not the others?</p>
+<p class="line">“We should think about this” is not a move.</p>
+</div>
+<div class="card how">
+<div class="top"><span class="chip">How would we do it?</span><span class="kind">AUDIT</span><span class="num">16 / 30</span></div>
+<h2 class="title">Where it stalled</h2>
+<div class="lbl">WHY IT GETS DODGED</div>
+<p class="a">Stalls get attributed to the last visible excuse. The actual blocker is usually a person or a permission nobody wants to name.</p>
+<div class="lbl">WRITE THIS DOWN</div>
+<p class="b">Where efforts to address this have stalled, and the actual blocker: partner buy-in, IT capacity, competing priorities, lack of clarity, lack of internal authority, something else.</p>
+<p class="line">Name the blocker, or the blocker wins.</p>
+</div>
+<div class="card how">
+<div class="top"><span class="chip">How would we do it?</span><span class="kind">MOVE</span><span class="num">17 / 30</span></div>
+<h2 class="title">One move, one owner, one date</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">Firms adopt AI as a mood, not a project. Without one named move, nothing has a start date, so nothing starts.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">From the audit, pick the single highest-leverage first move. One owner, one date, thirty days to evidence.</p>
+<p class="line">One move with a date beats five moves in a memo.</p>
+</div>
+<div class="card ready">
+<div class="top"><span class="chip">Are we ready?</span><span class="kind">AUDIT</span><span class="num">18 / 30</span></div>
+<h2 class="title">Where the knowledge lives</h2>
+<div class="lbl">WHY IT GETS DODGED</div>
+<p class="a">Firms run for years without a map of where their written knowledge lives, because everyone who needs a document asks the person who has it.</p>
+<div class="lbl">WRITE THIS DOWN</div>
+<p class="b">Where the firm&#x27;s important written knowledge lives — document management, shared drives, email, individuals&#x27; inboxes, paper. Is it organised, searchable, and accessible to the staff who need it?</p>
+<p class="line">If it lives in one person&#x27;s inbox, it lives at their pleasure.</p>
+</div>
+<div class="card ready">
+<div class="top"><span class="chip">Are we ready?</span><span class="kind">AUDIT</span><span class="num">19 / 30</span></div>
+<h2 class="title">The integration map</h2>
+<div class="lbl">WHY IT GETS DODGED</div>
+<p class="a">Practice systems get chosen for billing, then quietly become the ceiling on everything else. Nobody asks about integrations until something needs one.</p>
+<div class="lbl">WRITE THIS DOWN</div>
+<p class="b">The technology AI tools would need to integrate with — practice management, document management, accounting, billing — and any of them locked or constrained in ways that would limit it.</p>
+<p class="line">The system you can&#x27;t integrate with sets your ceiling.</p>
+</div>
+<div class="card ready">
+<div class="top"><span class="chip">Are we ready?</span><span class="kind">AUDIT</span><span class="num">20 / 30</span></div>
+<h2 class="title">The local option</h2>
+<div class="lbl">WHY IT GETS DODGED</div>
+<p class="a">Sovereign hosting sounds like an enterprise question. For regulated firms it is the question — and “we&#x27;d ask someone” is not a plan.</p>
+<div class="lbl">WRITE THIS DOWN</div>
+<p class="b">If the firm wanted sensitive matters in AI workflows without data leaving the building: is there anyone, internally or in its trusted network, who could evaluate or implement local AI infrastructure? If not, what&#x27;s the plan?</p>
+<p class="line">“We&#x27;d ask someone” is not a plan.</p>
+</div>
+<div class="card ready">
+<div class="top"><span class="chip">Are we ready?</span><span class="kind">AUDIT</span><span class="num">21 / 30</span></div>
+<h2 class="title">The capacity check</h2>
+<div class="lbl">WHY IT GETS DODGED</div>
+<p class="a">Change capacity is assumed to exist because the change feels urgent. Teams already at capacity absorb nothing, and the initiative quietly dies.</p>
+<div class="lbl">WRITE THIS DOWN</div>
+<p class="b">Whether the firm has the people-time to absorb a meaningful change in how it works with AI in the next six to twelve months — or whether the team is already at capacity for any new initiative.</p>
+<p class="line">No spare hours, no adoption. Count them first.</p>
+</div>
+<div class="card ready">
+<div class="top"><span class="chip">Are we ready?</span><span class="kind">MOVE</span><span class="num">22 / 30</span></div>
+<h2 class="title">Ask the lock question</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">Vendors answer integration questions with brochures, and firms discover the constraint after signing, when the lock is already paid for.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Ask each critical vendor three questions: can other systems read our data, can they write, and what does that cost? The answers go in the audit file.</p>
+<p class="line">Ask before the quote, not after the demo.</p>
+</div></div><div class="sheet"><div class="card value">
+<div class="top"><span class="chip">What's the value?</span><span class="kind">AUDIT</span><span class="num">23 / 30</span></div>
+<h2 class="title">Concrete change</h2>
+<div class="lbl">WHY IT GETS DODGED</div>
+<p class="a">“Efficiency” is the shape value takes in press releases. In firms it arrives as specific hours on specific documents.</p>
+<div class="lbl">WRITE THIS DOWN</div>
+<p class="b">If the firm closed its AI literacy gap in the next six months, what changes in concrete terms? Time saved on what; quality improved on what; risk reduced on what?</p>
+<p class="line">“On what?” is the whole question.</p>
+</div>
+<div class="card value">
+<div class="top"><span class="chip">What's the value?</span><span class="kind">AUDIT</span><span class="num">24 / 30</span></div>
+<h2 class="title">The policy&#x27;s value</h2>
+<div class="lbl">WHY IT GETS DODGED</div>
+<p class="a">Policies get valued as compliance objects, so their business case reads weak. The value is in what the firm can finally say and do.</p>
+<div class="lbl">WRITE THIS DOWN</div>
+<p class="b">If the firm wrote and operated a real AI use policy in the next twelve months, what would be the value? Be specific about the value, not the policy itself.</p>
+<p class="line">Sell the value, not the document.</p>
+</div>
+<div class="card value">
+<div class="top"><span class="chip">What's the value?</span><span class="kind">AUDIT</span><span class="num">25 / 30</span></div>
+<h2 class="title">The client questionnaire</h2>
+<div class="lbl">WHY IT GETS DODGED</div>
+<p class="a">The questionnaire is hypothetical until it isn&#x27;t — and by then, the answer is worth a tender, not a paragraph.</p>
+<div class="lbl">WRITE THIS DOWN</div>
+<p class="b">If a client questionnaire arrived next month asking how the firm handles AI in client material: what is the current answer worth? What would a confident answer be worth?</p>
+<p class="line">The answer has a price. So does the pause before it.</p>
+</div>
+<div class="card value">
+<div class="top"><span class="chip">What's the value?</span><span class="kind">AUDIT</span><span class="num">26 / 30</span></div>
+<h2 class="title">The cost of inaction</h2>
+<div class="lbl">WHY IT GETS DODGED</div>
+<p class="a">Business cases get written for action, because action has a quote attached. Inaction feels free, so its cost is never written.</p>
+<div class="lbl">WRITE THIS DOWN</div>
+<p class="b">What it would cost the firm, in time and money, not to act on this in the next twelve months.</p>
+<p class="line">The right business case is the cost of inaction.</p>
+</div>
+<div class="card value">
+<div class="top"><span class="chip">What's the value?</span><span class="kind">AUDIT</span><span class="num">27 / 30</span></div>
+<h2 class="title">The honest range</h2>
+<div class="lbl">WHY IT GETS DODGED</div>
+<p class="a">Partners hold different invisible numbers. Until they&#x27;re said out loud, every proposal lands as a surprise.</p>
+<div class="lbl">WRITE THIS DOWN</div>
+<p class="b">What investment range the firm would consider if the case were clear. Tens of thousands? Six figures? Be honest about what the firm would and would not approve.</p>
+<p class="line">An unspoken range vetoes every plan.</p>
+</div>
+<div class="card value">
+<div class="top"><span class="chip">What's the value?</span><span class="kind">MOVE</span><span class="num">28 / 30</span></div>
+<h2 class="title">The cost-of-inaction memo</h2>
+<div class="lbl">WHY IT GOES WRONG</div>
+<p class="a">AI proposals get judged against other spending, while standing still gets judged against nothing.</p>
+<div class="lbl">THE MOVE</div>
+<p class="b">Write the one-page cost of not acting, in the firm&#x27;s own terms, and put it beside the investment range before any decision is made.</p>
+<p class="line">Standing still has an invoice too.</p>
+</div>
+<div class="card meta">
+<div class="top"><span class="chip">READ ME LAST</span><span class="kind">AUDIT</span><span class="num">29 / 30</span></div>
+<h2 class="title">What your answers tell you</h2>
+<div class="lbl">WHY IT GETS DODGED</div>
+<p class="a">Most firms read diagnostics hoping for a score. There is no score here. There are four states, and each points at different work.</p>
+<div class="lbl">WRITE THIS DOWN</div>
+<p class="b">Could answer most, confidently and specifically? The work is consolidation. Around half vague or generic? The most common state: literacy first, policy second. Most uncertain, several surprises? Begin with a structured conversation. Wanted to discuss the answers? That signal is the work.</p>
+<p class="line">No number at the end. The work is in the answering.</p>
+</div></div>
+</body>
+</html>
