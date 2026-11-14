@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Adoption Deck — 30 cards for firms asking how to adopt AI</title>
+<meta name="description" content="A free deck of 30 written-answer cards for partners and principals of regulated firms. Five strategic questions, one section per partners' meeting.">
+<style>
+@font-face{font-family:'Domine';src:url('deck/fonts/Domine.ttf')}
+@font-face{font-family:'Funnel Sans';src:url('deck/fonts/FunnelSans.ttf')}
+@font-face{font-family:'Funnel Sans';src:url('deck/fonts/FunnelSans-Italic.ttf');font-style:italic}
+@font-face{font-family:'Nanum Gothic Coding';src:url('deck/fonts/NanumGothicCoding-Regular.ttf')}
+@font-face{font-family:'Nanum Gothic Coding';src:url('deck/fonts/NanumGothicCoding-Bold.ttf');font-weight:700}
+:root{--sage:#2F5347;--sage2:#4A6E62;--ink:#1a1a1c;--dim:#4B5157;--faint:#8A8E96;--gold:#8A6A1F;--gold2:#D9C98A;--paper:#F1EFE8;
+--can:#2F5347;--should:#B54A36;--how:#4E5D6B;--ready:#A8842C;--value:#6B4E5F;
+--serif:'Domine',Georgia,serif;--sans:'DM Sans','Funnel Sans','Segoe UI',sans-serif;--mono:'Nanum Gothic Coding','JetBrains Mono',monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:#fff;line-height:1.55}
+h1,h2,h3{font-family:var(--serif);line-height:1.15}
+.kicker{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold2)}
+.kicker::before{content:"";display:inline-block;width:26px;height:2px;background:var(--gold2);margin-right:10px;vertical-align:middle}
+.kicker.dark{color:var(--gold)}
+.kicker.dark::before{background:var(--gold)}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+.hero{position:relative;background:var(--sage);color:#fff;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background:
+  repeating-linear-gradient(-45deg,rgba(255,255,255,.025) 0 2px,transparent 2px 14px)}
+.hero .wrap{position:relative;padding:110px 24px 120px;max-width:1060px}
+.hero h1{font-size:clamp(30px,4.6vw,46px);margin:14px 0 0;color:#fff}
+.hero h1 em{font-style:normal;color:var(--gold2)}
+.hero p.lede{margin:16px 0 0;max-width:560px;font-size:17px;color:rgba(255,255,255,.82)}
+.hero p.lede b{color:#fff}
+.btns{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:6px;font-weight:700;font-size:14px;text-decoration:none}
+.btn.gold{background:var(--gold2);color:var(--sage)}
+.btn.ghost{border:1px solid rgba(255,255,255,.4);color:#fff}
+.btn.ghost:hover{border-color:var(--gold2);color:var(--gold2)}
+.note{margin-top:14px;font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:rgba(255,255,255,.55);text-transform:uppercase}
+section{padding:72px 0}
+section.alt{background:var(--paper)}
+.lead{font-family:var(--serif);font-size:clamp(20px,2.6vw,26px);margin:12px 0 0;max-width:680px}
+.lead em{font-style:normal;color:var(--gold)}
+.cats{margin-top:40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:22px}
+.cat{border-top:3px solid var(--c);padding-top:12px}
+.cat .n{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.14em;color:var(--c)}
+.cat h3{font-size:17px;margin:4px 0 4px}
+.cat p{font-size:13.5px;color:#4B5157}
+.can{--c:var(--can)}.should{--c:var(--should)}.how{--c:var(--how)}.ready{--c:var(--ready)}.value{--c:var(--value)}
+.pair{margin-top:44px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.step{background:#fff;border:1px solid #D8D4CA;border-radius:10px;padding:22px}
+.step .n{font-family:var(--serif);font-size:30px;color:var(--gold);font-weight:700}
+.step h3{font-size:16px;margin:6px 0 6px}
+.step p{font-size:13.5px;color:#4B5157}
+.dl{margin-top:40px;border:1px solid #D8D4CA;border-radius:10px;overflow:hidden}
+.dl a{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 22px;text-decoration:none;color:var(--ink);border-bottom:1px solid #E4E1D8}
+.dl a:last-child{border-bottom:0}
+.dl a:hover{background:var(--paper)}
+.dl .what{font-weight:700;font-size:15px}
+.dl .what span{display:block;font-weight:400;font-size:12.5px;color:#6B6F78;margin-top:2px}
+.dl .fmt{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;color:var(--gold);text-transform:uppercase;white-space:nowrap}
+.disclaimer{margin-top:22px;font-size:13px;color:var(--dim);max-width:640px}
+footer{background:var(--sage);color:rgba(255,255,255,.55);padding:34px 0}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+footer .tag{color:var(--gold2)}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="kicker">A free deck of written answers</div>
+    <h1>How should your firm<br>adopt AI? <em>In writing.</em></h1>
+    <p class="lede">Thirty cards for partners and principals, one per question: <b>Can we</b> do AI, <b>should</b> we, <b>how</b>, <b>are we ready</b>, and <b>what's the value</b>. Work one section per partners' meeting. The answers accumulate into the firm's position.</p>
+    <div class="btns">
+      <a class="btn gold" href="deck/adoption-deck-30-print.html">Print the deck</a>
+      <a class="btn ghost" href="deck/adoption-deck-guide.html">Start with the one-page guide</a>
+    </div>
+    <div class="note">No sign-up. No email. There is no score at the end.</div>
+  </div>
+</div>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="kicker dark">What's in it</div>
+    <h2 class="lead">Five strategic questions. <em>Answered in the firm's own words.</em></h2>
+    <div class="cats">
+      <div class="can"><div class="n">CAN WE · 6</div><h3>Capability</h3><p>What the firm actually uses today, who uses it, and whether the use is supported or merely tolerated.</p></div>
+      <div class="should"><div class="n">SHOULD WE · 6</div><h3>Opportunity &amp; risk</h3><p>Where value is plausible, where risk exceeds it, and the answer you'd give your regulator tomorrow.</p></div>
+      <div class="how"><div class="n">HOW · 5</div><h3>Implementation</h3><p>What the firm would actually do, in what order — and where previous efforts stalled.</p></div>
+      <div class="ready"><div class="n">ARE WE READY · 5</div><h3>Readiness</h3><p>Where the knowledge lives, what the tools must integrate with, and whether the team has the hours.</p></div>
+      <div class="value"><div class="n">THE VALUE · 6</div><h3>Business case</h3><p>What the work is worth in the firm's own terms — including the cost of not acting.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker dark">How to use it</div>
+    <h2 class="lead">Write, don't think. <em>One section at a time.</em></h2>
+    <div class="pair">
+      <div class="step"><div class="n">1</div><h3>Thirty to sixty minutes, pen in hand</h3><p>Audit cards ask the questions a diagnostic would. Written answers expose gaps that mental ones do not.</p></div>
+      <div class="step"><div class="n">2</div><h3>One section per partners' meeting</h3><p>Move cards turn each section's answers into something the firm keeps: an owner, a page, a date.</p></div>
+      <div class="step"><div class="n">3</div><h3>Read card 29 last</h3><p>There is no score. There are four states, and each points at different work — consolidation, literacy, conversation, or the discussion itself.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="download">
+  <div class="wrap">
+    <div class="kicker dark">Downloads</div>
+    <h2 class="lead">Print it yourself. <em>That's the point.</em></h2>
+    <div class="dl">
+      <a href="deck/adoption-deck-30-print.html"><span class="what">The deck — 30 cards<span>Print &amp; cut, A4 at 100%, 4 sheets. Cut along the dashed lines.</span></span><span class="fmt">HTML → print</span></a>
+      <a href="deck/adoption-desk-card.html"><span class="what">The desk card<span>One A4 pin-up: the five questions, their moves, and the four states.</span></span><span class="fmt">HTML → print</span></a>
+      <a href="deck/adoption-deck-guide.html"><span class="what">The one-page guide<span>Fifteen checks for the firm. The "not yet"s name your section.</span></span><span class="fmt">HTML → print</span></a>
+      <a href="https://github.com/michael-borck/adoption-deck"><span class="what">Everything, in the open<span>Markdown source, print layouts, and the provenance of every card.</span></span><span class="fmt">Repository</span></a>
+    </div>
+    <p class="disclaimer">This deck is a reflection prompt, not a diagnostic, and it is not a sales document. Some firms will work through it and conclude they have answers; that is a useful conclusion. The method is public. The client work is private.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="tag">AI can do the work. Your firm is paid for the judgement.</span>
+    <span>Free to print and share · not for resale</span>
+    <span>Dr Michael Borck · borck.consulting</span>
+  </div>
+</footer>
+
+</body>
+</html>

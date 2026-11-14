@@ -30,5 +30,9 @@ Two card types:
 
 ## Status
 
-Draft for review. Not yet published to GitHub. Print layout drafted; art and
-landing page come after content review.
+Live at github.com/michael-borck/adoption-deck — served by GitHub Pages.
+Complete system: deck (30 cards, print & cut), one-page guide (fifteen firm-level
+checks), desk card (the five questions and their moves on one A4).
+
+Art in the deck's own identity (paper-and-sage, rather than the Judgement
+brass-lamp noir) is a later pass.

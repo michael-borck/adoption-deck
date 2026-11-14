@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<title>The one-page guide · The Adoption Deck</title>
+<style>
+@font-face{font-family:'Domine';src:url('fonts/Domine.ttf')}
+@font-face{font-family:'Funnel Sans';src:url('fonts/FunnelSans.ttf')}
+@font-face{font-family:'Funnel Sans';src:url('fonts/FunnelSans-Italic.ttf');font-style:italic}
+@font-face{font-family:'Nanum Gothic Coding';src:url('fonts/NanumGothicCoding-Regular.ttf')}
+@font-face{font-family:'Nanum Gothic Coding';src:url('fonts/NanumGothicCoding-Bold.ttf');font-weight:700}
+:root{--sage:#2F5347;--ink:#1a1a1c;--dim:#4B5157;--faint:#8A8E96;--rule:#D8D4CA;--gold:#8A6A1F;--gold2:#D9C98A;
+--serif:'Domine',Georgia,serif;--sans:'DM Sans','Funnel Sans','Segoe UI',sans-serif;--mono:'Nanum Gothic Coding','JetBrains Mono',monospace}
+@page{size:A4;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:var(--sans);font-size:10.3pt;line-height:1.5;color:var(--ink);background:#eceae4}
+@media print{body{background:#fff}}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;display:flex;flex-direction:column;background:#fff;margin:6mm auto;box-shadow:0 1mm 4mm rgba(20,30,24,.18)}
+@media print{.page{margin:0;box-shadow:none}}
+.top{background:var(--sage);color:#fff;padding:8mm 12mm 6mm}
+.kicker{font-family:var(--mono);font-size:7.5pt;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold2)}
+.kicker::before{content:"";display:inline-block;width:16pt;height:2pt;background:var(--gold2);margin-right:6pt;vertical-align:middle}
+.top h1{font-family:var(--serif);font-size:20pt;margin-top:4pt}
+.top h1 em{font-style:normal;color:var(--gold2)}
+.top p{margin:3pt 0 0;color:rgba(255,255,255,.78);font-size:9.5pt}
+.top p b{color:#fff}
+.grid{flex:1;display:flex;flex-wrap:wrap;padding:7mm 10mm 0;gap:7mm 6mm;align-content:flex-start}
+.sec{width:calc(50% - 3mm);border-top:2.5pt solid var(--acc);padding-top:3.5pt}
+.sec h2{font-weight:700;font-size:14pt;margin:1pt 0 1pt;display:flex;align-items:baseline;gap:6pt}
+.sec h2 span{font-family:var(--mono);font-size:7.5pt;letter-spacing:.14em;color:var(--acc);font-weight:700}
+.sec .q{font-family:var(--serif);font-size:10.5pt;color:var(--dim);margin-bottom:3pt}
+.chk{display:flex;align-items:baseline;gap:3pt;padding:3pt 0;border-bottom:.5pt dotted var(--rule);font-size:9.3pt;line-height:1.38}
+.box{flex:none;display:inline-block;width:7pt;height:7pt;border:1pt solid #9a978c;border-radius:1.5pt;transform:translateY(0.8pt)}
+.lbl{flex:none;font-family:var(--mono);font-size:6.2pt;letter-spacing:.06em;color:var(--faint)}
+.lbl.y{color:var(--acc)}
+.start{font-family:var(--mono);font-size:7pt;letter-spacing:.08em;color:var(--acc);font-weight:700;margin-top:3pt;text-transform:uppercase}
+.bottom{display:flex;gap:5mm;padding:0 10mm 5mm}
+.pra{flex:1.35}
+.close{flex:1;background:#F1EFE8;border:.6pt solid var(--rule);border-radius:2mm;padding:4mm}
+.close h3{font-family:var(--mono);font-size:7.4pt;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin:0 0 2pt;font-weight:700}
+.close p{font-size:9.5pt;line-height:1.42}
+.wline{border-bottom:1pt solid #9a978c;height:7mm;margin:3pt 0 4pt}
+.foot{padding:2mm 10mm 6mm;display:flex;justify-content:space-between;font-family:var(--mono);font-size:7pt;letter-spacing:.08em;color:var(--faint);text-transform:uppercase}
+.can{--acc:#2F5347}.should{--acc:#B54A36}.how{--acc:#4E5D6B}.ready{--acc:#A8842C}.value{--acc:#6B4E5F}.p{--acc:#8A6A1F}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="top">
+    <div class="kicker">The Adoption Deck · The one-page guide</div>
+    <h1>Find your thinnest <em>section.</em></h1>
+    <p>Answer for <b>the firm</b>, not for yourself. Three checks per section, pen in hand. Be honest: nobody's marking it. The "not yet"s name where the work is.</p>
+  </div>
+
+  <div class="grid">
+    <div class="sec can">
+      <h2><span>01 · CAN WE?</span>Capability</h2>
+      <div class="q">Capability and current state.</div>
+      <div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>I can list every AI tool the firm pays for, plus the personal accounts staff use for work.</span></div>
+      <div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>For our three main tools, I can say who uses them, how often, and for what.</span></div>
+      <div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>One named person answers "is this appropriate?" for the whole firm.</span></div>
+      <div class="start">Not yet? Work section 01 — cards 01–06</div>
+    </div>
+
+    <div class="sec should">
+      <h2><span>02 · SHOULD WE?</span>Opportunity &amp; risk</h2>
+      <div class="q">Opportunity and risk.</div>
+      <div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>I can name where AI adds value for us, specific to a workflow — not "drafting".</span></div>
+      <div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>I can say with confidence whether our most sensitive material has passed through an AI tool.</span></div>
+      <div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>There is a written answer to "how does this firm use AI?" that I would give a regulator.</span></div>
+      <div class="start">Not yet? Work section 02 — cards 07–12</div>
+    </div>
+
+    <div class="sec how">
+      <h2><span>03 · HOW?</span>Implementation</h2>
+      <div class="q">Implementation orientation.</div>
+      <div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>AI training has happened, and something measurably changed afterwards.</span></div>
+      <div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>We have an AI use policy that staff could describe in their own words.</span></div>
+      <div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>The next move has one owner and a date — and we can say why it beats the alternatives.</span></div>
+      <div class="start">Not yet? Work section 03 — cards 13–17</div>
+    </div>
+
+    <div class="sec ready">
+      <h2><span>04 · ARE WE READY?</span>Readiness</h2>
+      <div class="q">Readiness check.</div>
+      <div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>I know where the firm's important written knowledge lives, and it is organised and searchable.</span></div>
+      <div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>I know which systems AI would need to integrate with, and which of them are locked.</span></div>
+      <div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>The team has people-time to absorb a meaningful change in the next six to twelve months.</span></div>
+      <div class="start">Not yet? Work section 04 — cards 18–22</div>
+    </div>
+
+    <div class="sec value" style="width:calc(50% - 3mm)">
+      <h2><span>05 · THE VALUE</span>Business case</h2>
+      <div class="q">Business case framing.</div>
+      <div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>I can state what changes in concrete terms: time on what, quality on what, risk on what.</span></div>
+      <div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>I could price our answer to a client questionnaire about how the firm handles AI.</span></div>
+      <div class="chk"><span class="box"></span><span class="lbl y">YES</span><span class="lbl">NOT YET</span><span>The cost of not acting over the next twelve months is written down, in the firm's own terms.</span></div>
+      <div class="start">Not yet? Work section 05 — cards 23–28</div>
+    </div>
+
+    <div class="close">
+      <h3>Your thinnest section</h3>
+      <p>Whichever section had the most "not yet" is where the firm is leaning on individual initiative.</p>
+      <div class="wline"></div>
+      <p>Work that section first — one section per partners' meeting, cards in hand. Then read card 29.</p>
+    </div>
+  </div>
+
+  <div class="foot"><span>AI can do the work. Your firm is paid for the judgement.</span><span>Free to print and share · not for resale · not a sales document</span></div>
+</div>
+</body>
+</html>
