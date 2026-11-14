@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<title>Run it as a session · The Adoption Deck</title>
+<style>
+@font-face{font-family:'Domine';src:url('fonts/Domine.ttf')}
+@font-face{font-family:'Funnel Sans';src:url('fonts/FunnelSans.ttf')}
+@font-face{font-family:'Funnel Sans';src:url('fonts/FunnelSans-Italic.ttf');font-style:italic}
+@font-face{font-family:'Nanum Gothic Coding';src:url('fonts/NanumGothicCoding-Regular.ttf')}
+@font-face{font-family:'Nanum Gothic Coding';src:url('fonts/NanumGothicCoding-Bold.ttf');font-weight:700}
+:root{--sage:#2F5347;--ink:#1a1a1c;--dim:#4B5157;--faint:#8A8E96;--rule:#D8D4CA;--gold:#8A6A1F;
+--serif:'Domine',Georgia,serif;--sans:'DM Sans','Funnel Sans','Segoe UI',sans-serif;--mono:'Nanum Gothic Coding','JetBrains Mono',monospace}
+@page{size:A4;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:var(--sans);font-size:10.4pt;line-height:1.5;color:var(--ink);background:#eceae4}
+@media print{body{background:#fff}}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;display:flex;flex-direction:column;background:#fff;margin:6mm auto;box-shadow:0 1mm 4mm rgba(20,30,24,.18)}
+@media print{.page{margin:0;box-shadow:none}}
+.top{background:var(--sage);color:#fff;padding:8mm 12mm 6mm}
+.kicker{font-family:var(--mono);font-size:7.5pt;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#D9C98A}
+.kicker::before{content:"";display:inline-block;width:16pt;height:2pt;background:#D9C98A;margin-right:6pt;vertical-align:middle}
+.top h1{font-family:var(--serif);font-size:20pt;margin-top:4pt}
+.top h1 em{font-style:normal;color:#D9C98A}
+.top p{margin:3pt 0 0;color:rgba(255,255,255,.78);font-size:9.5pt}
+.top p b{color:#fff}
+.need{margin:5mm 12mm 0;padding:4mm 5mm;background:#F1EFE8;border-left:2pt solid var(--gold);border-radius:1mm}
+.need h3{font-family:var(--mono);font-size:7.4pt;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 2pt;font-weight:700}
+.need p{font-size:9.4pt;margin:0}
+.sheet{flex:1;padding:5mm 12mm 0}
+.run{width:100%;border-collapse:collapse}
+.run th{font-family:var(--mono);font-size:7pt;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);text-align:left;padding:2.5mm 3mm 2mm;border-bottom:1.4pt solid var(--ink)}
+.run td{padding:2.8mm 3mm;border-bottom:.5pt dotted var(--rule);font-size:9.3pt;line-height:1.42;vertical-align:top}
+.run td.t{font-family:var(--mono);font-weight:700;font-size:8.5pt;color:var(--dim);white-space:nowrap;width:16mm}
+.run td b{font-weight:700}
+.debrief{margin:5mm 12mm 0;display:flex;gap:5mm}
+.debrief>div{flex:1;background:#F1EFE8;border:.6pt solid var(--rule);border-radius:2mm;padding:3.5mm}
+.debrief h3{font-family:var(--mono);font-size:7.2pt;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin:0 0 2pt;font-weight:700}
+.debrief p{font-size:9.2pt;line-height:1.42;margin:0 0 2pt}
+.foot{padding:3mm 12mm 6mm;display:flex;justify-content:space-between;font-family:var(--mono);font-size:7pt;letter-spacing:.08em;color:var(--faint);text-transform:uppercase}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="top">
+    <div class="kicker">The Adoption Deck · Facilitation</div>
+    <h1>Run it as a <em>sixty-minute session.</em></h1>
+    <p>For a partners' or leadership meeting. Three to eight people around one table, pens in hand. One session now; the rest of the deck one section per meeting after.</p>
+  </div>
+
+  <div class="need">
+    <h3>What you need on the table</h3>
+    <p>The one-page guide, printed per person · the deck, sorted by section, within reach · one sheet per person for written answers · a visible timer · nothing else. Laptops closed.</p>
+  </div>
+
+  <div class="sheet">
+    <table class="run">
+      <tr><th style="width:16mm">Time</th><th>Move</th></tr>
+      <tr><td class="t">0:00</td><td><b>Frame it.</b> One minute: this is not a decision meeting and not a policy meeting. It is a writing meeting. The point is to surface what the firm can and cannot currently answer. There is no score.</td></tr>
+      <tr><td class="t">0:05</td><td><b>Run the fifteen checks.</b> Everyone silently works the one-page guide, marking yes or not yet for the firm. Eight minutes, alone. Compare only the counts, not the answers.</td></tr>
+      <tr><td class="t">0:15</td><td><b>Name the thinnest section.</b> Count "not yet"s per section, out loud. The thinnest section becomes this session's work. If two tie, the one with the most partner disagreement wins.</td></tr>
+      <tr><td class="t">0:20</td><td><b>Write the audits.</b> Work that section's audit cards one at a time. Two minutes per card, writing alone; then sixty seconds each reading your answer aloud. No debate while answers are read — the reader keeps their words.</td></tr>
+      <tr><td class="t">0:40</td><td><b>Run the move card.</b> Take the section's move card and execute its first step in the room: name the owner, draft the page's first line, or write the cost. What can be finished now, finishes now.</td></tr>
+      <tr><td class="t">0:50</td><td><b>Book the next section.</b> Date the next meeting and name its section now, while the room is warm. The deck travels: whoever owns the move keeps the cards.</td></tr>
+      <tr><td class="t">0:57</td><td><b>Close on card 29.</b> Read "What your answers tell you" and let each person say which state the firm is in. If the room disagrees on the state, that disagreement is the finding — write it down.</td></tr>
+    </table>
+  </div>
+
+  <div class="debrief">
+    <div><h3>If the writing is thin</h3><p>Ask "would you say that sentence to the regulator?" If not, the answer isn't finished. One more pass, alone.</p></div>
+    <div><h3>If partners disagree</h3><p>Good. Disagreement about the facts is the session working. Record both answers verbatim; they reconcile later, on paper.</p></div>
+    <div><h3>The one rule</h3><p>Answers stay in the room and in writing. Nothing goes to staff, to clients, or to email until it is a position the firm has chosen on purpose.</p></div>
+  </div>
+  <div class="foot"><span>AI can do the work. Your firm is paid for the judgement.</span><span>Free to print and share · not for resale · not a sales document</span></div>
+</div>
+</body>
+</html>

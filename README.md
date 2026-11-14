@@ -31,8 +31,9 @@ Two card types:
 ## Status
 
 Live at github.com/michael-borck/adoption-deck — served by GitHub Pages.
-Complete system: deck (30 cards, print & cut), one-page guide (fifteen firm-level
-checks), desk card (the five questions and their moves on one A4).
+Complete system: deck (30 cards, print & cut + art edition), one-page guide
+(fifteen firm-level checks), desk card (five questions and moves on one A4),
+and a sixty-minute facilitation sheet.
 
 Art in the deck's own identity (paper-and-sage, rather than the Judgement
 brass-lamp noir) is a later pass.
