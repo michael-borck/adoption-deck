@@ -37,3 +37,11 @@ and a sixty-minute facilitation sheet.
 
 Art in the deck's own identity (paper-and-sage, rather than the Judgement
 brass-lamp noir) is a later pass.
+
+## Licence
+
+Deck content: **CC BY-NC-SA 4.0** — free to print, share and adapt for
+non-commercial use with attribution; commercial use by permission.
+Print layouts and code: **MIT**. See `LICENSE`.
+
+© Michael Borck — borck.consulting.
