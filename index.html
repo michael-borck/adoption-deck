@@ -26,7 +26,9 @@ h1,h2,h3{font-family:var(--serif);line-height:1.15}
 .hero{position:relative;background:var(--sage);color:#fff;overflow:hidden}
 .hero::after{content:"";position:absolute;inset:0;background:
   repeating-linear-gradient(-45deg,rgba(255,255,255,.025) 0 2px,transparent 2px 14px)}
-.hero .wrap{position:relative;padding:110px 24px 120px;max-width:1060px}
+.hero .bg{position:absolute;inset:0;background:url('assets/art/banner.png') center/cover;opacity:.42}
+.hero .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(36,62,53,.96) 0%,rgba(36,62,53,.72) 48%,rgba(36,62,53,.28) 100%)}
+.hero .wrap{position:relative;z-index:1;padding:110px 24px 120px;max-width:1060px}
 .hero h1{font-size:clamp(30px,4.6vw,46px);margin:14px 0 0;color:#fff}
 .hero h1 em{font-style:normal;color:var(--gold2)}
 .hero p.lede{margin:16px 0 0;max-width:560px;font-size:17px;color:rgba(255,255,255,.82)}
@@ -52,6 +54,12 @@ section.alt{background:var(--paper)}
 .step .n{font-family:var(--serif);font-size:30px;color:var(--gold);font-weight:700}
 .step h3{font-size:16px;margin:6px 0 6px}
 .step p{font-size:13.5px;color:#4B5157}
+.split{display:grid;grid-template-columns:minmax(240px,380px) 1fr;gap:48px;align-items:center;margin-top:44px}
+.split img{width:100%;border-radius:10px;display:block;box-shadow:0 10px 40px rgba(30,50,40,.25)}
+.split h3{font-size:19px;margin:0 0 10px}
+.split p{font-size:14.5px;color:#3B3F46;margin:0 0 12px}
+.split .facts{font-family:var(--mono);font-size:11.5px;letter-spacing:.05em;color:var(--faint);line-height:2;text-transform:uppercase}
+@media(max-width:800px){.split{grid-template-columns:1fr}}
 .dl{margin-top:40px;border:1px solid #D8D4CA;border-radius:10px;overflow:hidden}
 .dl a{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 22px;text-decoration:none;color:var(--ink);border-bottom:1px solid #E4E1D8}
 .dl a:last-child{border-bottom:0}
@@ -68,6 +76,7 @@ footer .tag{color:var(--gold2)}
 <body>
 
 <div class="hero">
+  <div class="bg"></div>
   <div class="wrap">
     <div class="kicker">A free deck of written answers</div>
     <h1>How should your firm<br>adopt AI? <em>In writing.</em></h1>
@@ -102,6 +111,22 @@ footer .tag{color:var(--gold2)}
       <div class="step"><div class="n">1</div><h3>Thirty to sixty minutes, pen in hand</h3><p>Audit cards ask the questions a diagnostic would. Written answers expose gaps that mental ones do not.</p></div>
       <div class="step"><div class="n">2</div><h3>One section per partners' meeting</h3><p>Move cards turn each section's answers into something the firm keeps: an owner, a page, a date.</p></div>
       <div class="step"><div class="n">3</div><h3>Read card 29 last</h3><p>There is no score. There are four states, and each points at different work — consolidation, literacy, conversation, or the discussion itself.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker dark">The printed deck</div>
+    <h2 class="lead">Also a boxed deck <em>for the boardroom table.</em></h2>
+    <div class="split">
+      <img src="assets/art/cover.png" alt="The Adoption Deck box art: index cards on a sage folder beside a window">
+      <div>
+        <h3>Built for partners' meetings</h3>
+        <p>The deck runs as a series, not a workshop: one section per partners' meeting, answers written in the firm's own words. Five meetings later, the firm holds a written position on AI it did not have before.</p>
+        <p>Card faces stay typographic on purpose. Art lives on the box, the back and the wall — the answers stay yours.</p>
+        <div class="facts">30 cards · 5 strategic questions · 93×67 mm<br>Domine · DM Sans · Nanum Gothic Coding<br>Free to print and share · not for resale</div>
+      </div>
     </div>
   </div>
 </section>
