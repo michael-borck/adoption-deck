@@ -1,5 +1,9 @@
 # The Adoption Deck
 
+<p align="center">
+  <img src="assets/art/banner.png" alt="The Adoption Deck" width="720">
+</p>
+
 Thirty cards for partners and principals of regulated Australian firms asking
 how their firm should adopt AI. The free, printable sibling of the AI Readiness
 Diagnostic on borck.consulting — the diagnostic in deck form.
@@ -35,8 +39,9 @@ Complete system: deck (30 cards, print & cut + art edition), one-page guide
 (fifteen firm-level checks), desk card (five questions and moves on one A4),
 and a sixty-minute facilitation sheet.
 
-Art in the deck's own identity (paper-and-sage, rather than the Judgement
-brass-lamp noir) is a later pass.
+Art: `assets/art/` holds the deck's own paper-and-sage identity — cover, back,
+banner and category illustrations, generated with limn. The art edition is
+`adoption-deck-30-art.html` (portrait cards, 6 per A4).
 
 ## Licence
 
